@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol viewBox="0 0 22 25" id="some--triangle" xmlns="http://www.w3.org/2000/svg">
+    <path data-name="Form 24"
+      d="M20.684 14.74L4.64 24.54a3.228 3.228 0 01-3.062.14 2.685 2.685 0 01-1.579-2.39V2.7A2.685 2.685 0 011.578.31 3.258 3.258 0 014.64.46l16.044 9.79A2.666 2.666 0 0122 12.5a2.638 2.638 0 01-1.316 2.24z" />
+  </symbol>
+  <symbol viewBox="0 0 15 15" id="icons--view-icons" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M0 3.75h3.75V0H0v3.75zM5.625 15h3.75v-3.75h-3.75V15zM0 15h3.75v-3.75H0V15zm0-5.625h3.75v-3.75H0v3.75zm5.625 0h3.75v-3.75h-3.75v3.75zM11.25 0v3.75H15V0h-3.75zM5.625 3.75h3.75V0h-3.75v3.75zm5.625 5.625H15v-3.75h-3.75v3.75zm0 5.625H15v-3.75h-3.75V15z" />
+  </symbol>
+  <symbol viewBox="0 0 20 15" id="icons--view-list" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M.007 0h4.422v4.172H.007V0zm5.828 0h14.159v4.172H5.835V0zM.007 5.413h4.422v4.172H.007V5.413zm5.828 0h14.159v4.172H5.835V5.413zM.007 10.827h4.422V15H.007v-4.171zm5.828 0h14.159V15H5.835v-4.171z" />
+  </symbol>
+  <symbol viewBox="0 0 16 16" id="icons--filter" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2 2h13v2l-5 5v7l-3-2V9L2 4zm0-2h13v1H2V0z" />
+  </symbol>
+</svg>
