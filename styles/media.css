@@ -1,0 +1,250 @@
+@media (max-width: 1540px) {
+  .overboard-card__img {
+    left: 20px;
+  }
+}
+
+@media (max-width: 1175px) {
+  .menu {
+    margin-left: -43px;
+  }
+}
+@media (max-width: 1300px) {
+  .video__bg {
+    background-position: center;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__inner {
+    display: block;
+  }
+}
+
+@media (max-width: 1070px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1380px) {
+  ul.popular__bottom {
+    grid-template-columns: 1fr;
+    grid-row-gap: 70px;
+  }
+  .design__content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 990px) {
+  .popular__content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .popular__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .design__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 920px) {
+  .header__benefits-wrapper {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  .header__benefits-support,
+  .header__benefits-delivery {
+    width: 50%;
+  }
+  .header__benefits-delivery {
+    justify-content: end;
+  }
+  .header__benefits-secure {
+    margin-top: 10px;
+  }
+  .header__benefits {
+    height: auto;
+  }
+  .shop__content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 745px) {
+  .overboard-card__img {
+    display: none;
+  }
+
+  .overboard-card__info {
+    margin-right: auto;
+    padding: 85px 15px;
+  }
+  .overboard-card__info::after {
+    display: none;
+  }
+  .footer__top {
+    grid-template-columns: 3fr 1fr;
+  }
+  .footer__column:not(:first-child) {
+    padding: 0;
+  }
+}
+
+@media (max-width: 635px) {
+  .shop__inner {
+    justify-content: center;
+  }
+
+  .shop__wrap {
+    flex: auto;
+    padding-left: 0;
+  }
+
+  .subscribe {
+    flex-wrap: wrap;
+  }
+  .popular__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .articles__items {
+    grid-template-columns: 1fr;
+  }
+
+  .move-out-card__img--small {
+    top: 69px;
+    left: 108px;
+  }
+
+  .move-out-card__img {
+    top: 114px;
+    left: -5px;
+  }
+
+  .header__benefits {
+    flex-wrap: wrap;
+  }
+  .header__inner {
+    background-image: none;
+  }
+
+  .video__bg {
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__content {
+    flex: 0 0 100%;
+  }
+
+  button.filter__btn {
+    display: flex;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+  }
+
+  .shop__filters {
+    position: absolute;
+    background-color: #ffff;
+    left: -400px;
+    z-index: 100;
+    width: 300px;
+    min-height: 100vh;
+    box-shadow: 3px 6px 20px 0px rgba(0, 0, 0, 0.212);
+    transition: left 0.3s;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .shop__filters--active {
+    left: 0px;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+
+  .contacts__links-inner {
+    flex-wrap: wrap;
+  }
+
+  .team__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .boast__inner {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+.team__inner {
+  flex-direction: column;
+}
+
+@media (max-width: 580px) {
+  .header__benefits-wrapper {
+    flex-direction: column;
+  }
+  .header__benefits-delivery {
+    justify-content: start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header__benefits-support,
+  .header__benefits-delivery,
+  .header__benefits-secure {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .popular__content {
+    grid-template-columns: 1fr;
+  }
+
+  .header__benefits-support h3,
+  .header__benefits-delivery h3,
+  .header__benefits-secure h3 {
+    font-size: 15px;
+  }
+  .header__benefits-wrapper {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer__top {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 25px;
+  }
+  .footer__column {
+    width: 260px;
+  }
+  .shop__content {
+    grid-template-columns: 1fr;
+  }
+  .product-card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .shop__top {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .filter__selects {
+    margin-top: 20px;
+  }
+}
