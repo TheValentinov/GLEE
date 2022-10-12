@@ -101,6 +101,10 @@
   }
 }
 
+.team__inner{
+flex-direction: column;
+}
+
 @media (max-width: 550px) {
   .popular__content {
     grid-template-columns: 1fr;
