@@ -1,0 +1,202 @@
+.product-card {
+   // min-height: 380px;
+   height: 100%;
+   width: 100%;
+   max-width: 270px;
+   padding: 20px 20px 30px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   font-size: 16px;
+   position: relative;
+   @include DMSans(500);
+   // transition: max-width 0.3s, box-shadow 0.5s ease 0.01s, padding 0.3s;
+
+   &:hover .product-card__hover {
+      opacity: 1;
+   }
+
+   @include sm {
+      // transition: box-shadow 0.5s ease 0.01s, padding 0.3s, ;
+   }
+
+   // .product-card__wrap
+   &__wrap {
+      // flex-grow: 1;
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      height: 225px;
+      overflow: hidden;
+      // transition: padding 0.1s, height 1s 0.1s;
+
+      @include xl {
+         height: 150px;
+         margin-bottom: 70px;
+      }
+
+      @include lg {
+         height: 100px;
+      }
+
+      @include sm {
+         transition: padding 1s;
+      }
+   }
+
+   // .product-card__img
+   &__img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+   }
+
+   // .product-card__hover
+   &__hover {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      padding-top: 30px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      @include sm {
+         padding-top: 0;
+         // align-items: flex-end;
+         // bottom: 95px;
+         opacity: 1;
+      }
+   }
+
+   // .product-card__element
+   &__element {
+      width: 50px;
+      height: 50px;
+      position: relative;
+
+      &:not(:last-child) {
+         margin-right: 20px;
+
+         @include xl {
+            margin-right: 0;
+
+            &::after {
+               position: absolute;
+               top: 50%;
+               right: -1px;
+               transform: translateY(-50%);
+               content: "";
+               width: 2px;
+               height: 80%;
+               background-color: $ocean-blue-450;
+               opacity: 1;
+            }
+         }
+      }
+   }
+
+   // .product-card__circle
+   &__circle {
+      width: 100%;
+      display: block;
+      outline: transparent;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $white;
+      border-radius: 50%;
+      box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.2); // It seemed to me that the circles are hard to see
+      transition: background-color 0.3s;
+      border: 2px solid transparent;
+      transition: border-radius 2s;
+
+      @include xl {
+         box-shadow: none;
+         border-radius: 0;
+      }
+
+      &:focus {
+         border-color: $ocean-blue-450;
+         cursor: pointer;
+      }
+
+      &:hover {
+         background-color: $ocean-blue-450;
+         cursor: pointer;
+
+         svg {
+            transform: perspective(400px) rotateY(180deg) translate(50%, -50%);
+            fill: $white;
+         }
+      }
+
+      &:active {
+         cursor: wait;
+         border: none;
+         background-color: $graphite-black-100;
+         border-color: transparent;
+      }
+
+      svg {
+         fill: $ocean-blue-450;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         transition: transform 0.5s, fill 0.3s;
+      }
+   }
+
+   // .product-card__info 
+   &__info {
+      text-align: center;
+   }
+
+   // .product-card__stars 
+   &__stars {
+      display: none;
+   }
+
+   // .product-card__rating
+   &__rating {
+      display: none;
+   }
+
+   // .product-card__text 
+   &__text {
+      display: none;
+   }
+
+   // .product-card__product
+   &__product {
+      color: $ocean-blue-200;
+      @include text-clamp(1);
+      transition: font-size 0.5s;
+      text-align: center;
+
+      @include sm {
+         @include text-clamp(2);
+         transition: none;
+      }
+   }
+
+   // .product-card__price
+   &__price {
+      font-weight: 700;
+      color: $ocean-blue-450;
+      transition: font-size 1s, color 2s;
+      text-align: center;
+   }
+}

@@ -1,0 +1,243 @@
+.product-slider {
+
+   &__top {
+      overflow: hidden;
+      background-color: $apricot-craiola-400;
+   }
+
+   // .product-slider__item
+   &__item {
+      outline: transparent;
+      padding: 55px 0 50px;
+      position: relative;
+      z-index: 1;
+
+      @include xl {
+         padding: 0;
+         margin-bottom: 15px;
+      }
+
+      &::before {
+         position: absolute;
+         content: "";
+         top: 50%;
+         right: 10.5%;
+         transform: translateY(-50%);
+         // This is the width of the circle in the background of the slide.
+         // Without a fixed width and height, it won't be a circle.
+         width: 640px;
+         height: 640px;
+         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+         border-radius: 50%;
+
+         @include rwd(1399.98) {
+            right: 15px;
+            width: 500px;
+            height: 500px;
+         }
+
+         @include xl {
+            width: 370px;
+            height: 370px;
+         }
+
+         @include md {
+            display: none;
+         }
+      }
+   }
+
+   // .product-slider__wrap
+   &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 640px;
+
+      @include xl {
+         min-height: 400px;
+         padding: 0 50px;
+      }
+
+      @include md {
+         min-height: 150px;
+         justify-content: center;
+         text-align: center;
+         position: relative;
+      }
+   }
+
+   // .product-slider__content
+   &__content {
+      max-width: 430px;
+
+      @include xl {
+         max-width: 40%;
+      }
+
+      @include md {
+         max-width: 100%;
+         padding: 50px 0 10px;
+         z-index: 2;
+      }
+   }
+
+   // .product-slider__img
+   &__img {
+      max-width: 640px;
+      max-height: 640px;
+      z-index: 2;
+
+      @include rwd(1399.98) {
+         max-width: 500px;
+         max-height: 500px;
+      }
+
+      @include xl {
+         max-width: 48%;
+         max-height: 400px;
+      }
+
+      @include md {
+         max-width: 90%;
+         max-height: 150px;
+         position: relative;
+         left: -55px;
+         z-index: 0;
+      }
+
+      @include sm {
+         max-height: 110px;
+         left: auto;
+         right: auto;
+      }
+   }
+
+   // .product-slider__title
+   &__title {
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 72px;
+      line-height: 1;
+      margin-bottom: 20px;
+      color: $ocean-blue-200;
+      @include text-clamp(3);
+
+      @include xl {
+         font-size: 55px;
+      }
+
+      @include lg {
+         font-size: 40px;
+         @include text-clamp(2);
+      }
+
+      @include sm {
+         font-size: 30px;
+      }
+   }
+
+   // .product-slider__about
+   &__about {
+      @include Rubik(400);
+      @include text-clamp(6);
+      font-size: 18px;
+      color: $ocean-blue-300;
+
+      @include xl {
+         @include text-clamp(3);
+      }
+
+      @include lg {
+         @include text-clamp(1);
+      }
+
+      // & p:last-of-type {
+      //    margin-bottom: 40px
+      // }
+   }
+
+   // .product-slider__btn
+   &__btn {
+      background-color: $ocean-blue-450;
+      color: $white;
+      outline: transparent;
+      transition: background-color 0.3s ease;
+      fill: $white;
+      margin-top: 40px;
+      cursor: pointer;
+
+      &:focus {
+         background-color: $ocean-blue-400;
+      }
+
+      &:hover {
+         background-color: $ocean-blue-200;
+      }
+
+      &:active {
+         background-color: $graphite-black-100;
+      }
+
+      @include md {
+         position: absolute;
+         bottom: 0;
+         opacity: 0.9;
+         // margin: 20px 0 10px;
+         // margin: 0 auto;
+         z-index: 2;
+      }
+
+      @include sm {
+         margin-top: 15px;
+         position: relative;
+         opacity: 1;
+      }
+   }
+
+   .slick {
+      &-dots {
+         display: flex;
+         justify-content: center;
+         color: $ocean-blue-200;
+         margin-bottom: 45px;
+
+         li:not(:last-of-type) {
+            margin-right: 10px;
+         }
+
+         button {
+            outline: transparent;
+            margin: 0;
+            border: none;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            font-size: 10px;
+            transition: opacity 0.3s ease;
+            opacity: 0.4;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+
+            &:hover,
+            &:focus {
+               border-color: $ocean-blue-450;
+            }
+
+            @include md {
+               width: 20px;
+               height: 20px;
+               font-size: 0;
+            }
+         }
+
+         & .slick-active {
+            button {
+               opacity: 1;
+            }
+         }
+      }
+   }
+}

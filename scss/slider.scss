@@ -1,0 +1,38 @@
+// .product-slider__btn
+// &__btn {
+.slick-slider{
+    background-color: $ocean-blue-450;
+    color: $white;
+    outline: transparent;
+    transition: background-color 0.3s ease;
+    fill: $white;
+    margin-top: 40px;
+    cursor: pointer;
+
+    &:focus {
+       background-color: $ocean-blue-400;
+    }
+
+    &:hover {
+       background-color: $ocean-blue-200;
+    }
+
+    &:active {
+       background-color: $graphite-black-100;
+    }
+
+    @include md {
+       position: absolute;
+       bottom: 0;
+       opacity: 0.9;
+       // margin: 20px 0 10px;
+       // margin: 0 auto;
+       z-index: 2;
+    }
+
+    @include sm {
+       margin-top: 15px;
+       position: relative;
+       opacity: 1;
+    }
+ }

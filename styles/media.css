@@ -1,0 +1,121 @@
+@media (max-width: 1540px) {
+  .overboard-card__img {
+    left: 20px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .menu {
+    margin-left: -43px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__inner {
+    display: block;
+  }
+}
+
+@media (max-width: 1015px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1380px) {
+  ul.popular__bottom {
+    grid-template-columns: 1fr;
+    grid-row-gap: 70px;
+  }
+  .design__content {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 635px) {
+  .subscribe {
+    flex-wrap: wrap;
+  }
+  .popular__content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .articles__items {
+    grid-template-columns: 1fr;
+  }
+  .footer__top {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .move-out-card__img--small {
+    top: 69px;
+    left: 108px;
+  }
+
+  .move-out-card__img {
+    top: 114px;
+    left: -5px;
+  }
+  .header__benefits-wrapper {
+    flex-wrap: wrap;
+  }
+  .header__benefits {
+    flex-wrap: wrap;
+  }
+  .header__inner {
+    background-image: none;
+  }
+
+  .video__bg {
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__content {
+    flex: 0 0 100%;
+  }
+
+  button.filter__btn {
+    display: flex;
+  }
+
+  .contacts__map {
+    display: none;
+  }
+
+  .contacts__links-inner {
+    flex-wrap: wrap;
+  }
+
+  .overboard-card__info {
+    margin-right: 0px;
+  }
+
+  .team__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .boast__inner {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .popular__content {
+    grid-template-columns: 1fr;
+  }
+
+  .header__benefits-support h3,
+  .header__benefits-delivery h3,
+  .header__benefits-secure h3 {
+    font-size: 15px;
+  }
+  .header__benefits-wrapper {
+    margin: 10px;
+  }
+
+  .header__benefits {
+    height: 243px;
+  }
+}
